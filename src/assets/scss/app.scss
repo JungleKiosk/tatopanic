@@ -2,8 +2,9 @@
 @use "./partials/_variables.scss" as *;
 @use "./partials/_navbar.scss" as *;
 @use "./partials/_footer.scss" as *;
-@use "./app/_jumbo.scss" as *;
+@use "./app/_header.scss" as *;
 @use "./colormode/_lMode.scss" as *;
+
 
 body {
   background-color: $bg_body;
