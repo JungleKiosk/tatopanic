@@ -9,6 +9,9 @@ const messages = {
     home: {
       title: "Home",
     },
+    about: {
+      title: "About",
+    }
   },
   it: {
     navbar: {
@@ -17,6 +20,9 @@ const messages = {
     },
     home: {
       title: "Home",
+    },
+    about: {
+      title: "About",
     }
   },
 };

@@ -4,7 +4,14 @@
 
 
 <template>
-<h1>About</h1>
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-12 col-lg-8 p-3">
+                <h1 class="display-1">{{ $t('about.title') }}</h1>
+                <br>
+            </div>
+        </div>
+    </div>
 </template>
 
 
