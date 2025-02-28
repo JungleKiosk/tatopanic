@@ -3,7 +3,7 @@
 .waves {
     position: relative;
     width: 100%;
-    height: 10vh; // Ridotta altezza delle onde
+    height: 5vh; // Ridotta altezza delle onde
     margin-bottom: -5px;
     /*Fix for safari gap*/
     min-height: 70px;
@@ -13,12 +13,12 @@
 /* Animation */
 
 .parallax>use {
-    animation: move-forever 40s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite; // Animazione più lenta
+    animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite; // Animazione più lenta
 }
 
 .parallax>use:nth-child(1) {
     animation-delay: -5s;
-    animation-duration: 120s;
+    animation-duration: 50;
 }
 
 .parallax>use:nth-child(2) {
@@ -33,15 +33,16 @@
 
 .parallax>use:nth-child(4) {
     animation-delay: -5s;
-    animation-duration: 250s;
+    animation-duration: 30;
 }
 
 @keyframes move-forever {
     0% {
-        transform: translate3d(-60px, 0, 0); // Movimento più piccolo per onde meno evidenti
+        transform: translate3d(-90px, 0, 0);
     }
+
     100% {
-        transform: translate3d(60px, 0, 0);
+        transform: translate3d(85px, 0, 0);
     }
 }
 

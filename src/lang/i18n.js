@@ -7,7 +7,7 @@ const messages = {
       about: "About"
     },
     home: {
-      title: "Home",
+      title: "Tatopanic",
     },
     about: {
       title: "About",
