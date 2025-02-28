@@ -2,22 +2,8 @@
 @use "./partials/_variables.scss" as *;
 @use "./partials/_navbar.scss" as *;
 @use "./partials/_footer.scss" as *;
-
-body.light-mode {
-  background-color: $light;
-  color: $dark;
-  .nota{
-    background-color: $notalight;
-  }
-}
-
-body.dark-mode {
-  background-color: $dark;
-  color: $light;
-  .nota{
-    background-color: $notadark;
-  }
-}
+@use "./app/_jumbo.scss" as *;
+@use "./colormode/_lMode.scss" as *;
 
 body {
   background-color: $bg_body;
