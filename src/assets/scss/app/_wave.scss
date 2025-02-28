@@ -10,6 +10,12 @@
     max-height: 100px;
 }
 
+.flipped {
+    transform: scaleY(-1);
+    margin-top: -5px; /* Evita spazi tra le onde */
+}
+
+
 /* Animation */
 
 .parallax>use {
