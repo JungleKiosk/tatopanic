@@ -4,6 +4,10 @@ body.light-mode {
     background-color: $light;
     color: $dark;
 
+    .col-12 {
+        border: 2px solid rgba(176, 5, 5, 0.825);
+    }
+
     .nota {
         background-color: $notalight;
     }
@@ -12,6 +16,7 @@ body.light-mode {
         background-color: #a9c7e5;
         padding: 2rem 0;
     }
+
     .jumbotron {
         background: #2c3e50;
         color: white;

@@ -21,10 +21,24 @@ export default {
         </header>
 
         <main class="container mt-5">
+            <!-- 1st - content -->
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8 p-3">
-                    <h2>{{ $t('about.subtitle') }}</h2>
-                    <p>{{ $t('about.description') }}</p>
+                    <h2>{{ $t('home.subtitle') }}</h2>
+                    <p>{{ $t('home.description') }}</p>
+                </div>
+                <div class="col-12 col-lg-4 p-3">
+                    <h2>{{ $t('home.subtitle') }}</h2>
+                    <p>{{ $t('home.description') }}</p>
+                </div>
+            </div>
+            <!-- 1st - content -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 p-3">
+
+                </div>
+                <div class="col-12 col-lg-4 p-3">
+
                 </div>
             </div>
         </main>
@@ -33,6 +47,4 @@ export default {
     </div>
 </template>
 
-<style>
-
-</style>
+<style></style>

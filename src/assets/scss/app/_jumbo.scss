@@ -1,12 +1,18 @@
 @use "./../partials/_variables.scss" as *;
+@use "./../app/_wave.scss" as *;
 
 .header {
     background-color: #02172c;
-    padding: 2rem 0;
+    padding: 3rem;
 }
+
 .jumbotron {
     background: #2c3e50;
     color: white;
     text-align: center;
     border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    align-content: center;
 }
+
