@@ -1,9 +1,11 @@
 @use "./../partials/_variables.scss" as *;
 @use "./../app/_wave.scss" as *;
 
-header{
+header {
     background-color: #0e2339;
+
     .jumbotron {
+        background-color: #0e2339;
         color: white;
         text-align: center;
         border-radius: 10px;
@@ -12,4 +14,3 @@ header{
         align-content: center;
     }
 }
-
