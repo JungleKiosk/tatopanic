@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import home from "../views/Home.vue"
 import about from "../views/About.vue"
+import skill from "../views/skill.vue"
 
 /* ------------------------------------------------- */
 
@@ -17,6 +18,11 @@ const router = createRouter({
             path: "/about",
             name: "about",
             component: about
+        },
+        {
+            path: "/skill",
+            name: "skill",
+            component: skill
         }
     ]
 })

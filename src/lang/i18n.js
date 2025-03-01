@@ -4,7 +4,8 @@ const messages = {
   en: {
     navbar: {
       home: "Home",
-      about: "About"
+      about: "About",
+      skill: "Skill"
     },
     home: {
       title: "Tatopanic",
@@ -16,12 +17,16 @@ const messages = {
     },
     about: {
       title: "About",
+    },
+    skill: {
+      title: "Skill",
     }
   },
   it: {
     navbar: {
       home: "Home",
-      about: "About"
+      about: "About",
+      skill: "Skill"
     },
     home: {
       title: "Tatopanic",
@@ -33,6 +38,9 @@ const messages = {
     },
     about: {
       title: "Chi siamo",
+    },
+    skill: {
+      title: "Skill",
     }
   },
 };

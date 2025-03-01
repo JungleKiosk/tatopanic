@@ -16,6 +16,7 @@ export default {
     <ul>
       <li><router-link to="/">{{ $t('navbar.home') }}</router-link></li>
       <li><router-link to="/about">{{ $t('navbar.about') }}</router-link></li>
+      <li><router-link to="/skill">{{ $t('navbar.skill') }}</router-link></li>
       <li><ColorMode /></li>
       <li><LangSwitcher /></li> <!-- Language Switcher qui -->
     </ul>
