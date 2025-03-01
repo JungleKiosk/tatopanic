@@ -4,7 +4,7 @@ import img2 from "../assets/img/jumbo/2.jpg";
 import img3 from "../assets/img/jumbo/3.jpg";
 
 export default {
-    name: "Jumbo",
+    name: "SliderImg",
     data() {
         return {
             currentSlide: 0,
@@ -19,7 +19,7 @@ export default {
             this.currentSlide = (this.currentSlide - 1 + this.images.length) % this.images.length;
         },
         autoSlide() {
-            setInterval(this.nextSlide, 3000); // Cambia immagine ogni 3 secondi
+            setInterval(this.nextSlide, 5000); // Cambia immagine ogni 3 secondi
         }
     },
     mounted() {
@@ -34,18 +34,15 @@ export default {
             <div class="col-12 col-lg-4">
                 <h1>{{ $t('jumbo.title') }}</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+            </div> 
             <div class="col-12 col-lg-4">
                 <div class="carousel">
-                    <!-- Immagini -->
                     <div class="carousel-inner">
-                        <img :src="images[currentSlide]" class="carousel-image" alt="Immagine" />
+                        <img v-for="(img, index) in images" :key="index" :src="img"
+                            :class="{ active: index === currentSlide }" class="carousel-image img_jumbo rounded-4" alt="Immagine" />
                     </div>
-
-                    <!-- Pulsanti -->
-                    <button class="prev" @click="prevSlide">&#10094;</button>
-                    <button class="next" @click="nextSlide">&#10095;</button>
                 </div>
+
             </div>
         </div>
     </div>
@@ -53,18 +50,33 @@ export default {
 
 <style scoped>
 .carousel {
-    position: relative;
-    width: 100%;
-    max-width: 400px; /* Larghezza massima del carosello */
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Centra il carosello */
+    align-items: center; /* Allinea verticalmente */
+    width: 100%; 
 }
 
 .carousel-inner {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Imposta una larghezza massima */
+    height: 300px; /* Altezza del carosello */
 }
+
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assicura che l'immagine si adatti */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Mostra solo l'immagine attiva */
+.carousel-image.active {
+    opacity: 1;
+}
+
 
 
 /* Pulsanti */

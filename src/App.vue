@@ -3,11 +3,11 @@ import Navbar from "./components/partials/Navbar.vue";
 import Wave from "./components/Wave.vue";
 import WaveMirrow from "./components/WaveMirrow.vue";
 import Footer from "./components/partials/Footer.vue";
-import Jumbo from "./components/Jumbo.vue";
+import Slider from "./components/Slider.vue";
 
 export default {
   components: {
-    Navbar, Footer, Wave, WaveMirrow, Jumbo
+    Navbar, Footer, Wave, WaveMirrow, Slider
   },
 };
 </script>
@@ -23,10 +23,9 @@ export default {
       </div>
       <Wave></Wave>
     </header>
-    
     <WaveMirrow></WaveMirrow>
-    <Jumbo></Jumbo>
     <router-view />
+    <Slider></Slider>
     <Footer />
   </div>
 </template>
