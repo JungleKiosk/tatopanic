@@ -1,6 +1,27 @@
 @use "./../partials/_variables.scss" as *;
 @use "./../app/_wave.scss" as *;
 
-header {
-    background-color: #030d18;
+#header {
+    background-color: $bg_body2;
+
+}
+
+
+.title-container {
+    display: flex; /* Rende il contenitore flessibile */
+    align-items: center; /* Allinea verticalmente titolo e immagine */
+    justify-content: center; /* Centra il contenuto */
+}
+
+.title-image-dx, .title-image-sx {
+    width: 20%; /* Modifica la dimensione dell'immagine */
+    height: auto; /* Mantiene le proporzioni */
+}
+
+/* ✅ Versione responsive */
+@media (max-width: 768px) {
+   
+    .title-image-dx {
+        width: 10%; /* Rende l'immagine più piccola su mobile */
+    }
 }

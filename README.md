@@ -12,27 +12,41 @@ tatopanic/
 │  ├─ App.vue
 │  ├─ assets/
 │  │  ├─ img/
+│  │  │  ├─ jumbo/
+│  │  │  │  ├─ 1.jpg
+│  │  │  │  ├─ 2.jpg
+│  │  │  │  └─ 3.jpg
 │  │  │  ├─ logo/
 │  │  │  └─ svg/
+│  │  │     ├─ boat.svg
+│  │  │     ├─ boat_empty.svg
+│  │  │     ├─ w2.svg
 │  │  │     └─ wave.svg
 │  │  └─ scss/
 │  │     ├─ app/
-│  │     │  ├─ _jumbo.scss
+│  │     │  ├─ _header.scss
 │  │     │  └─ _wave.scss
 │  │     ├─ app.scss
 │  │     ├─ colormode/
 │  │     │  └─ _lMode.scss
 │  │     └─ partials/
 │  │        ├─ _footer.scss
+│  │        ├─ _img.scss
 │  │        ├─ _navbar.scss
 │  │        └─ _variables.scss
 │  ├─ components/
-│  │  ├─ Jumbo.vue
-│  │  └─ partials/
-│  │     ├─ ColorMode.vue
-│  │     ├─ Footer.vue
-│  │     ├─ LangSwitcher.vue
-│  │     └─ Navbar.vue
+│  │  ├─ main/
+│  │  │  ├─ AboutMain.vue
+│  │  │  ├─ HomeMain.vue
+│  │  │  └─ SkillMain.vue
+│  │  ├─ partials/
+│  │  │  ├─ ColorMode.vue
+│  │  │  ├─ Footer.vue
+│  │  │  ├─ LangSwitcher.vue
+│  │  │  └─ Navbar.vue
+│  │  ├─ Slider.vue
+│  │  ├─ Wave.vue
+│  │  └─ WaveMirrow.vue
 │  ├─ lang/
 │  │  └─ i18n.js
 │  ├─ main.js
@@ -40,5 +54,6 @@ tatopanic/
 │  │  └─ index.js
 │  └─ views/
 │     ├─ About.vue
-│     └─ Home.vue
+│     ├─ Home.vue
+│     └─ Skill.vue
 └─ vite.config.js
