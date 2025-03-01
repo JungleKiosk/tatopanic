@@ -12,9 +12,9 @@
 
 .flipped {
     transform: scaleY(-1);
-    margin-top: -5px; /* Evita spazi tra le onde */
+    margin-top: -5px;
+    /* Evita spazi tra le onde */
 }
-
 
 /* Animation */
 
@@ -24,7 +24,7 @@
 
 .parallax>use:nth-child(1) {
     animation-delay: -5s;
-    animation-duration: 50;
+    animation-duration: 50s;
 }
 
 .parallax>use:nth-child(2) {
@@ -39,7 +39,7 @@
 
 .parallax>use:nth-child(4) {
     animation-delay: -5s;
-    animation-duration: 30;
+    animation-duration: 30s;
 }
 
 @keyframes move-forever {
@@ -49,6 +49,58 @@
 
     100% {
         transform: translate3d(85px, 0, 0);
+    }
+}
+
+.boat {
+    position: absolute;
+    top: 160px;
+    /* Default: schermo grande */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5%;
+    height: auto;
+    z-index: 10;
+    animation: boat-move 6s infinite ease-in-out;
+}
+
+
+@media (max-width: 1199px) {
+    .boat {
+        width: 5%;
+        top: 160px;
+    }
+}
+
+/* Modalità laptop (768px - 1199px) */
+@media (min-width: 768px){
+    .boat {
+        width: 8%;
+        top: 160px;
+    }
+}
+
+/* Modalità mobile (max-width: 767px) */
+@media (max-width: 767px) {
+    .boat {
+        width: 15%;
+        top: 130px;
+        /* Sposta la barca più in basso */
+    }
+}
+
+
+@keyframes boat-move {
+    0% {
+        transform: translateX(50%) translateY(0) rotate(2deg);
+    }
+
+    50% {
+        transform: translateX(50%) translateY(-5px) rotate(-3deg);
+    }
+
+    100% {
+        transform: translateX(50%) translateY(0) rotate(2deg);
     }
 }
 

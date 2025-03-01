@@ -19,23 +19,16 @@ export default {
         <header class="header pt-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-4">
-                        <h1 class="display-1">{{ $t('home.title') }}</h1>
+                    <h1 class="display-1 text-center">{{ $t('home.title') }}</h1>
                 </div>
             </div>
             <Wave></Wave>
         </header>
-
         <WaveMirrow></WaveMirrow>
-        
         <Jumbo></Jumbo>
-
         <main class="container mt-5">
-
             <HomeMain></HomeMain>
-
-           
         </main>
-
 
     </div>
 </template>
