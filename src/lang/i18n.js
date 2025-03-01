@@ -9,6 +9,15 @@ const messages = {
     home: {
       title: "Tatopanic",
     },
+    jumbo: {
+      title: "Hi, I'm",
+      txt: "IAEBCIYVEUCYVicbkhbkbiiVIYGVIYLSBAIWEBFIBibiyvgyivcweihf",
+      boxbtn: "btn",
+      q1: "Where?",   // AGGIUNTO
+      q2: "When?",    // AGGIUNTO
+      q3: "Who?",     // AGGIUNTO
+      btn: "Click me"
+    },
     about: {
       title: "About",
     }
@@ -21,11 +30,21 @@ const messages = {
     home: {
       title: "Home",
     },
+    jumbo: {
+      title: "Ciao, sono ...",
+      txt: "IAEBCIYVEUCYVicbkhbkbiiVIYGVIYLSBAIWEBFIBibiyvgyivcweihf",
+      boxbtn: "btn",
+      q1: "Dove?",    // AGGIUNTO
+      q2: "Quando?",  // AGGIUNTO
+      q3: "Chi?",     // AGGIUNTO
+      btn: "Cliccami"
+    },
     about: {
-      title: "About",
+      title: "Chi siamo",
     }
   },
 };
+
 
 const userLocale = localStorage.getItem("language");
 const locale = userLocale && ['en', 'it'].includes(userLocale) ? userLocale : 'en';
