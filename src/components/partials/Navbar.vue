@@ -42,7 +42,7 @@ export default {
       <li>
         <!-- ✅ Bottone per cambiare tema -->
         <button @click="toggleTheme" class="theme-button">
-          {{ isDarkMode ? '🌞 Light Mode' : '🌙 Dark Mode' }}
+          {{ isDarkMode ? '🌞' : '🌙' }}
         </button>
       </li>
       <li><lang></lang></li>

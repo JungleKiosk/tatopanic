@@ -6,7 +6,7 @@ import Footer from "./components/partials/Footer.vue";
 import Slider from "./components/Slider.vue";
 
 // ✅ Importa le immagini correttamente
-import lightImage from "./assets/img/header/1.png";
+import lightImage from "./assets/img/header/4.png";
 import darkImage from "./assets/img/header/3.png";
 
 export default {
