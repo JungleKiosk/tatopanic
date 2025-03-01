@@ -31,11 +31,7 @@ export default {
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-4">
-                <h1>{{ $t('jumbo.title') }}</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div> 
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 p-4">
                 <div class="carousel">
                     <div class="carousel-inner">
                         <img v-for="(img, index) in images" :key="index" :src="img"
