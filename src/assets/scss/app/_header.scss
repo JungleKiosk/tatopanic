@@ -3,6 +3,7 @@
 
 #header {
     background-color: $bg_body2;
+    color: $light;
 
 }
 
@@ -13,15 +14,6 @@
     justify-content: center; /* Centra il contenuto */
 }
 
-.title-image-dx, .title-image-sx {
-    width: 20%; /* Modifica la dimensione dell'immagine */
-    height: auto; /* Mantiene le proporzioni */
-}
-
-/* ✅ Versione responsive */
-@media (max-width: 768px) {
-   
-    .title-image-dx {
-        width: 10%; /* Rende l'immagine più piccola su mobile */
-    }
+.title-image-dx:hover {
+    transform: scale(1.1);
 }

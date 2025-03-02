@@ -2,7 +2,7 @@
 import lang from "../partials/LangSwitcher.vue"
 export default {
   name: "Navbar",
-  components:{
+  components: {
     lang
   },
   data() {
@@ -27,7 +27,7 @@ export default {
       localStorage.setItem("theme", this.isDarkMode ? "dark-mode" : "light-mode");
       document.body.classList.toggle("dark-mode", this.isDarkMode);
       document.body.classList.toggle("light-mode", !this.isDarkMode);
-      this.$emit("toggle-theme"); // ✅ Emette evento a `App.vue`
+
     }
   }
 };
@@ -45,7 +45,9 @@ export default {
           {{ isDarkMode ? '🌞' : '🌙' }}
         </button>
       </li>
-      <li><lang></lang></li>
+      <li>
+        <lang></lang>
+      </li>
     </ul>
   </nav>
 </template>

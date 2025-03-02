@@ -6,12 +6,26 @@
     .img_jumbo {
         width: 70%;
     }
+
+    .title-image-dx {
+        width: 15%; /* Modifica la dimensione dell'immagine */
+        height: auto; /* Mantiene le proporzioni */
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
 }
 
 /* Modalità laptop (768px - 1199px) */
 @media (min-width: 768px) {
     .img_jumbo {
         width: 80%;
+    }
+
+    .title-image-dx {
+        width: 15%; /* Modifica la dimensione dell'immagine */
+        height: auto; /* Mantiene le proporzioni */
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
     }
 }
 
@@ -20,4 +34,13 @@
     .img_jumbo {
         width: 80%;
     }
+
+    .title-image-dx {
+        width: 10%;
+        min-width: 100px; /* 🔹 Assicura che non sparisca */
+        display: block !important; /* 🔹 Assicura che sia visibile */
+        opacity: 1 !important;
+    }
 }
+
+

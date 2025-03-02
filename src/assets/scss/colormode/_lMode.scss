@@ -5,7 +5,8 @@ body.light-mode {
     color: $txtlight;
 
     #header {
-        background-color: $sky_day;
+        background-color: $light;
+        color: $bg_body2;
     }
 
     .jumbotron {
@@ -16,4 +17,3 @@ body.light-mode {
     }
 
 }
-
