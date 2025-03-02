@@ -34,14 +34,14 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar">
+  <nav class="navbar justify-content-center">
     <ul>
       <li><router-link to="/">{{ $t('navbar.home') }}</router-link></li>
       <li><router-link to="/about">{{ $t('navbar.about') }}</router-link></li>
       <li><router-link to="/skill">{{ $t('navbar.skill') }}</router-link></li>
       <li>
         <!-- ✅ Bottone per cambiare tema -->
-        <button @click="toggleTheme" class="theme-button">
+        <button @click="toggleTheme" class="theme-button rounded-5">
           {{ isDarkMode ? '🌞' : '🌙' }}
         </button>
       </li>

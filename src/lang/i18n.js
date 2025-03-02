@@ -9,17 +9,15 @@ const messages = {
     },
     home: {
       title: "Tatopanic",
-    },
-    jumbo: {
-      title: "Hi, I'm",
-      txt: "IAEBCIYVEUCYVicbkhbkbiiVIYGVIYLSBAIWEBFIBibiyvgyivcweihf",
-      boxbtn: "btn",
+      subtitle: "Test IT lang ",
     },
     about: {
       title: "About",
+      subtitle: "Test IT lang ",
     },
     skill: {
       title: "Skill",
+      subtitle: "Test IT lang ",
     }
   },
   it: {
@@ -30,17 +28,15 @@ const messages = {
     },
     home: {
       title: "Tatopanic",
-    },
-    jumbo: {
-      title: "Ciao, sono ...",
-      txt: "IAEBCIYVEUCYVicbkhbkbiiVIYGVIYLSBAIWEBFIBibiyvgyivcweihf",
-      boxbtn: "btn",
+      subtitle: "Test EN lang ",
     },
     about: {
       title: "Chi siamo",
+      subtitle: "Test EN lang ",
     },
     skill: {
       title: "Skill",
+      subtitle: "Test EN lang ",
     }
   },
 };
