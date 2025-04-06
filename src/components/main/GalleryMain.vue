@@ -1,32 +1,41 @@
 <script>
-export default {
-    name: "GalleryMain",
+import data from '../../data/gallery.json';
 
+export default {
+  name: "GalleryMain",
+  data() {
+    return {
+      collections: data
+    };
+  },
+  methods: {
+    getImagePath(name) {
+      return new URL(`../../assets/img/${name}`, import.meta.url).href;
+    }
+  }
 };
 </script>
 
-
 <template>
-    <h1>Gallery</h1>
+  <div class="container py-5">
+    <h1 class="text-center">{{ $t('gallery.title') }}</h1>
     <div class="row justify-content-center">
-        <div class="col-12 col-lg-8 p-3">
-            <h2>{{ $t('gallery.subtitle') }}</h2>
-            <p>{{ $t('gallery.description') }}</p>
+      <div
+        v-for="item in collections"
+        :key="item.id"
+        class="col-12 col-md-4 mb-4"
+      >
+        <div class="card h-100 shadow-sm">
+          <img :src="getImagePath(item.cover)" class="card-img-top" :alt="item.title">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-text">{{ item.desc }}</p>
+            <router-link :to="`/gallery/${item.id}`" class="btn btn-primary">
+              See more
+            </router-link>
+          </div>
         </div>
-<!--         <div class="col-12 col-lg-4 p-3">
-            <h2>{{ $t('gallery.subtitle') }}</h2>
-            <p>{{ $t('gallery.description') }}</p>
-        </div> -->
+      </div>
     </div>
-    <!--1st - content -->
-<!--     <div class="row justify-content-center">
-        <div class="col-12 col-lg-8 p-3">
-
-        </div>
-        <div class="col-12 col-lg-4 p-3">
-
-        </div>
-    </div> -->
+  </div>
 </template>
-
-<style scoped></style>
