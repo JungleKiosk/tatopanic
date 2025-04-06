@@ -39,6 +39,7 @@ export default {
       <li><router-link to="/">{{ $t('navbar.home') }}</router-link></li>
       <li><router-link to="/about">{{ $t('navbar.about') }}</router-link></li>
       <li><router-link to="/skill">{{ $t('navbar.skill') }}</router-link></li>
+      <li><router-link to="/gallery">{{ $t('navbar.gallery') }}</router-link></li>
       <li>
         <!-- ✅ Bottone per cambiare tema -->
         <button @click="toggleTheme" class="theme-button rounded-5">

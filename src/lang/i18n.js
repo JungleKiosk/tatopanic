@@ -5,7 +5,8 @@ const messages = {
     navbar: {
       home: "Home",
       about: "About",
-      skill: "Skill"
+      skill: "Skill",
+      gallery: "Gallery"
     },
     home: {
       title: "Tatopanic",
@@ -18,13 +19,18 @@ const messages = {
     skill: {
       title: "Skill",
       subtitle: "Test IT lang ",
+    },
+    gallery: {
+      title: "Gallery",
+      subtitle: "Test IT lang ",
     }
   },
   it: {
     navbar: {
       home: "Home",
       about: "About",
-      skill: "Skill"
+      skill: "Skill",
+      gallery: "Gallery"
     },
     home: {
       title: "Tatopanic",
@@ -37,6 +43,10 @@ const messages = {
     skill: {
       title: "Skill",
       subtitle: "Test EN lang ",
+    },
+    gallery: {
+      title: "Galleria",
+      subtitle: "Test IT lang ",
     }
   },
 };

@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import home from "../views/Home.vue"
 import about from "../views/About.vue"
-import skill from "../views/skill.vue"
+import skill from "../views/Skill.vue"
+import gallery from "../views/Gallery.vue"
 
 /* ------------------------------------------------- */
 
@@ -23,6 +24,11 @@ const router = createRouter({
             path: "/skill",
             name: "skill",
             component: skill
+        },
+        {
+            path: "/gallery",
+            name: "gallery",
+            component: gallery
         }
     ]
 })
