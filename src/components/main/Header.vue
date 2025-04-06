@@ -9,9 +9,6 @@ export default {
 };
 </script>
 
-
-
-
 <template>
     <div id="app">
         <header id="header" class="pt-5">
@@ -19,8 +16,6 @@ export default {
                 <div class="col-12 col-lg-4">
                     <div class="title-container">
                         <h1 class="display-1">{{ $t('home.title') }}</h1>
-                        <!-- ✅ Usa il valore corretto della computed property -->
-                         <!-- <img src="../../assets/img/header/4.png" alt=""> -->
                     </div>
                 </div>
             </div>

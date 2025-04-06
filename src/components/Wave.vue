@@ -1,5 +1,5 @@
 <script>
-import boatsvg from "../assets/img/svg/boat.svg"
+/* import boatsvg from "../assets/img/svg/boat.svg" */
 export default {
     name: "wave",
 

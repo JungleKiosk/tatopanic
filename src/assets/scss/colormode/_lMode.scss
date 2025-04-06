@@ -1,19 +1,12 @@
 @use "./../partials/_variables.scss" as *;
 
 body.light-mode {
-    background-color: $light;
+    background-color: $light2;
     color: $txtlight;
 
     #header {
-        background-color: $light;
+        background-color: $light3;
         color: $bg_body2;
-    }
-
-    .jumbotron {
-        background: $sky_night;
-        color: $light;
-        text-align: center;
-        border-radius: 10px;
     }
 
 }
