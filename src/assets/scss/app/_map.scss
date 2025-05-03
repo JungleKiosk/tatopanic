@@ -1,0 +1,22 @@
+img .logos{
+    width: 50%;
+}
+
+.img_slider {
+    transition: transform 0.2s ease-in-out;
+    transform-origin: center center;
+}
+
+.img_slider:hover {
+    transform: scale(1.5);
+}
+
+.row_images {
+    
+    border-radius: 30px;
+    padding: 10px;
+}
+.popup{
+    background-color: #c788f3a3;
+    border-radius: 5px;
+}

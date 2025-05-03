@@ -6,7 +6,8 @@ const messages = {
       home: "Home",
       about: "About",
       skill: "Skill",
-      gallery: "Gallery"
+      gallery: "Gallery",
+      sections: "Sections"
     },
     home: {
       title: "Tatopanic",
@@ -30,7 +31,8 @@ const messages = {
       home: "Home",
       about: "About",
       skill: "Skill",
-      gallery: "Gallery"
+      gallery: "Gallery",
+      sections: "Sections"
     },
     home: {
       title: "Tatopanic",

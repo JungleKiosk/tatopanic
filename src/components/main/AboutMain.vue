@@ -1,7 +1,17 @@
 <script>
+import MapGallery from "./MapGallery.vue"
+import marker_points from "../../data/markers.json";
+
 export default {
     name: "AboutMain",
-
+    components: {
+        MapGallery
+    },
+    data() {
+        return {
+            marker_points: marker_points
+        };
+    }
 };
 </script>
 
@@ -13,20 +23,10 @@ export default {
             <h2>{{ $t('about.subtitle') }}</h2>
             <p>{{ $t('about.description') }}</p>
         </div>
-<!--         <div class="col-12 col-lg-4 p-3">
-            <h2>{{ $t('about.subtitle') }}</h2>
-            <p>{{ $t('about.description') }}</p>
-        </div> -->
+        <MapGallery :marker_points="marker_points"></MapGallery>
+
     </div>
-    <!--1st - content -->
-<!--     <div class="row justify-content-center">
-        <div class="col-12 col-lg-8 p-3">
 
-        </div>
-        <div class="col-12 col-lg-4 p-3">
-
-        </div>
-    </div> -->
 </template>
 
 <style scoped></style>

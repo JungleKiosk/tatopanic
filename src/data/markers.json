@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "Gomera",
+    "desc": "Isola di Gomera",
+    "lat": 28.078376,
+    "long": -17.331305,
+    "cover": "map/canarie/gomera/1.jpg",
+    "images": [
+      "map/canarie/gomera/1.jpg",
+      "map/canarie/gomera/2.jpg",
+      "map/canarie/gomera/3.jpg"
+    ]
+  }
+]

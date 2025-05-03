@@ -38,7 +38,6 @@ export default {
     <ul>
       <li><router-link to="/">{{ $t('navbar.home') }}</router-link></li>
       <li><router-link to="/about">{{ $t('navbar.about') }}</router-link></li>
-      <li><router-link to="/skill">{{ $t('navbar.skill') }}</router-link></li>
       <li><router-link to="/gallery">{{ $t('navbar.gallery') }}</router-link></li>
       <li>
         <!-- ✅ Bottone per cambiare tema -->
@@ -46,9 +45,9 @@ export default {
           {{ isDarkMode ? '🌞' : '🌙' }}
         </button>
       </li>
-      <li>
+<!--       <li>
         <lang></lang>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </template>
