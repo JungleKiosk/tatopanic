@@ -26,9 +26,6 @@ export default {
         };
     },
     methods: {
-        getImagePath: function (name) {
-            return new URL(`../assets/img/${name}`, import.meta.url).href
-        },
         selectMarker: function (marker) {
             this.selectedMarker = marker;
         },
@@ -60,25 +57,22 @@ export default {
                             <div>
                                 <!-- <p>id: {{ coordinate.id }}</p> -->
                                 <p>{{ coordinate.city }}</p>
-                                <p>{{ coordinate.lat }} , {{ coordinate.long }}</p>
-                            </div>
+<!--                                 <p>{{ coordinate.lat }} , {{ coordinate.long }}</p>
+ -->                            </div>
                         </l-tooltip>
                         <l-popup class="popup">
                             <div>
-                                <!-- <p>id: {{ coordinate.id }}</p> -->
                                 <p class="p-1">City: {{ coordinate.city }}</p>
-                                <div class="row align-items-center row_images">
-                                    <div class="col-3 img_slider"
-                                        v-for="(image, imageIndex) in coordinate.img_marker_card" :key="imageIndex">
-                                        <img :src="getImagePath(image.img_card)" :alt="image.img_card" class="img-fluid"
-                                            @click="selectImage(image)" />
-                                    </div>
-                                </div>
-                                <img class="p-2 rounded-5" :src="getImagePath(selectedMarker?.img_popup)"
-                                    alt="City image: castle or river" />
                                 <p class="py-1">Coordinates: {{ coordinate.lat }} , {{ coordinate.long }}</p>
+
+                                <!-- 🔗 Pulsante per aprire la Gallery filtrata per location -->
+                                <router-link :to="{ name: 'gallery', query: { location: coordinate.location } }"
+                                    class="btn btn-primary btn-sm">
+                                    See images from {{ coordinate.location }}
+                                </router-link>
                             </div>
                         </l-popup>
+
                     </l-marker>
                 </template>
             </l-map>

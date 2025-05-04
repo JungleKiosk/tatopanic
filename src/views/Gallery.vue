@@ -13,8 +13,13 @@ export default {
         };
     },
     created() {
+        const loc = this.$route.query.location;
+        if (loc) {
+            this.selectedLocation = loc;
+        }
         this.applyFilters();
-    },
+    }
+    ,
     computed: {
         allTags() {
             const tagSet = new Set();
@@ -39,7 +44,8 @@ export default {
             this.filteredCollections = this.allCollections
                 .filter(
                     (collection) =>
-                        !this.selectedLocation || collection.location === this.selectedLocation
+                        !this.selectedLocation ||
+                        collection.location.toLowerCase() === this.selectedLocation.toLowerCase()
                 )
                 .map((collection) => {
                     const filteredImages = collection.images.filter((img) => {
@@ -72,6 +78,17 @@ export default {
             this.applyFilters();
         },
     },
+    watch: {
+        '$route.query.location': {
+            immediate: true,
+            handler(loc) {
+                if (loc) {
+                    this.selectedLocation = loc;
+                    this.applyFilters();
+                }
+            }
+        }
+    }
 };
 </script>
 
@@ -96,7 +113,7 @@ export default {
             </div>
 
             <!-- 🏷️ Tags -->
-           <!--  <div class="tag-slider d-flex justify-content-center flex-wrap">
+            <!--  <div class="tag-slider d-flex justify-content-center flex-wrap">
                 <span v-for="tag in allTags" :key="tag" class="badge bg-info text-dark mx-1 my-1"
                     :class="{ 'bg-dark text-white': selectedTag === tag }" style="cursor: pointer"
                     @click="filterByTag(tag)">
@@ -128,8 +145,4 @@ export default {
 
 </template>
 
-<style scoped>
-
-
-
-</style>
+<style scoped></style>
