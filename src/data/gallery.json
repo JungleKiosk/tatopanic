@@ -6,27 +6,21 @@
       "images": [
         {
           "id": 1,
-          "src": "img/gallery/canarie/gomera/1.jpg",
-          "title": "Vista dal Mirador",
-          "tags": ["travel", "ocean", "mountain"]
+          "src": "img/gallery/canarie/gomera/gomera1.jpg",
+          "tags": [
+            "travel",
+            "ocean",
+            "mountain"
+          ]
         },
         {
           "id": 2,
-          "src": "img/gallery/canarie/gomera/2.jpg",
+          "src": "img/gallery/canarie/gomera/gomera2.jpg",
           "title": "Sentiero al tramonto",
-          "tags": ["hike", "nature"]
-        }
-      ]
-    },
-    {
-      "location": "uk",
-      "name": "Lake District",
-      "images": [
-        {
-          "id": 3,
-          "src": "img/gallery/uk/3.jpg",
-          "title": "Paesaggio innevato",
-          "tags": ["snow", "travel"]
+          "tags": [
+            "hike",
+            "nature"
+          ]
         }
       ]
     }
