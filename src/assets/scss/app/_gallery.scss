@@ -1,53 +1,43 @@
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-
-.card-img {
-    border-radius: 4px;
-}
-
-.image {
-    width: 100%;
-}
-
-.tags {
-    margin-top: 0.5rem;
-}
-
-.tag {
-    display: inline-block;
-    background: #e0f7fa;
-    color: #006064;
-    padding: 0.2rem 0.5rem;
-    margin-right: 0.3rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
 .filters-bar {
-    position: sticky;
-    top: 60px;
-    /* o l'altezza della tua navbar */
-    z-index: 999;
-    background-color: white;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
-    backdrop-filter: blur(6px);
-    background-color: rgba(255, 255, 255, 0.85);
+  position: sticky;
+  top: 60px;
+  /* altezza della navbar */
+  z-index: 999;
+  background-color: rgba(14, 35, 57, 0.7);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+}
+
+/* tag slider scroll */
+.tag-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.tag-slider::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+/* badge tag style */
+.tag {
+  background: #e0f7fa;
+  color: #006064;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+@media (max-width: 767.98px) {
+  .tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+  }
 }
 
 
 
-@media (min-width: 768px) {
-    .filters-bar {
-        flex-direction: row;
-        align-items: center;
-        justify-content: start;
-    }
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
 }

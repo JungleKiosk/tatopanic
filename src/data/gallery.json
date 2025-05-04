@@ -1,32 +1,51 @@
 {
   "collections": [
     {
-      "location": "canarie",
-      "name": "Gomera",
+      "name": "nowhere",
+      "location": "UK",
       "images": [
         {
           "id": 1,
-          "src": "img/gallery/canarie/gomera/gomera1.jpg",
+          "src": "img/gallery/uk/uk1.jpg",
           "tags": [
             "travel",
-            "ocean",
-            "mountain"
+            "skills"
           ]
         },
         {
           "id": 2,
-          "src": "img/gallery/canarie/gomera/gomera2.jpg",
-          "title": "Sentiero al tramonto",
+          "src": "img/gallery/uk/uk5.jpg",
           "tags": [
-            "hike",
+            "travel",
+            "skills"
+          ]
+        },
+        {
+          "id": 3,
+          "src": "img/gallery/uk/uk2.jpg",
+          "tags": [
             "nature"
+          ]
+        },
+        {
+          "id": 4,
+          "src": "img/gallery/uk/uk4.jpg",
+          "tags": [
+            "landscape"
+          ]
+        },
+        {
+          "id": 5,
+          "src": "img/gallery/uk/uk3.jpg",
+          "tags": [
+            "travel"
           ]
         }
       ]
     },
     {
-      "location": "canarie",
-      "name": "Gomera",
+      "name": "Canarie",
+      "location": "Gomera",
       "images": [
         {
           "id": 1,
@@ -40,10 +59,105 @@
         {
           "id": 2,
           "src": "img/gallery/canarie/gomera/gomera2.jpg",
-          "title": "Sentiero al tramonto",
           "tags": [
             "hike",
             "nature"
+          ]
+        },
+        {
+          "id": 3,
+          "src": "img/gallery/canarie/gomera/gomera3.jpg",
+          "tags": [
+            "nature",
+            "view"
+          ]
+        },
+        {
+          "id": 4,
+          "src": "img/gallery/canarie/gomera/gomera4.JPG",
+          "tags": [
+            "landscape",
+            "sunset"
+          ]
+        },
+        {
+          "id": 5,
+          "src": "img/gallery/canarie/gomera/gomera5.jpg",
+          "tags": [
+            "travel",
+            "hike"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Canarie",
+      "location": "Las Palmas",
+      "images": []
+    },
+    {
+      "name": "nowhere",
+      "location": "Holland",
+      "images": [
+        {
+          "id": 1,
+          "src": "img/gallery/holland/holand1.jpg",
+          "tags": [
+            "netherlands",
+            "city"
+          ]
+        },
+        {
+          "id": 2,
+          "src": "img/gallery/holland/holand2.jpg",
+          "tags": [
+            "travel",
+            "bikes"
+          ]
+        },
+        {
+          "id": 3,
+          "src": "img/gallery/holland/holand3.jpg",
+          "tags": [
+            "canals",
+            "architecture"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "nowhere",
+      "location": "Portugal",
+      "images": [
+        {
+          "id": 1,
+          "src": "img/gallery/portugal/portugal1.jpg",
+          "tags": [
+            "travel",
+            "city"
+          ]
+        },
+        {
+          "id": 2,
+          "src": "img/gallery/portugal/portugal2.jpg",
+          "tags": [
+            "ocean",
+            "sunset"
+          ]
+        },
+        {
+          "id": 3,
+          "src": "img/gallery/portugal/portugal3.jpg",
+          "tags": [
+            "nature"
+          ]
+        },
+        {
+          "id": 4,
+          "src": "img/gallery/portugal/portugal4.jpg",
+          "tags": [
+            "mountain",
+            "hike"
           ]
         }
       ]
