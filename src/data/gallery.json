@@ -23,6 +23,30 @@
           ]
         }
       ]
+    },
+    {
+      "location": "canarie",
+      "name": "Gomera",
+      "images": [
+        {
+          "id": 1,
+          "src": "img/gallery/canarie/gomera/gomera1.jpg",
+          "tags": [
+            "travel",
+            "ocean",
+            "mountain"
+          ]
+        },
+        {
+          "id": 2,
+          "src": "img/gallery/canarie/gomera/gomera2.jpg",
+          "title": "Sentiero al tramonto",
+          "tags": [
+            "hike",
+            "nature"
+          ]
+        }
+      ]
     }
   ]
 }
