@@ -50,38 +50,33 @@ export default {
 </script>
 
 <template>
-    <div class="gallery-container">
+    <div class="container">
         <input v-model="searchQuery" @input="onSearchInput" placeholder="Search images..." class="search-input" />
         <button @click="resetFilters">Reset</button>
 
-        <div v-for="collection in filteredCollections" :key="collection.name" class="collection">
+        <div v-for="collection in filteredCollections" :key="collection.name" class="mb-5">
             <h2>{{ collection.name }} ({{ collection.location }})</h2>
-            <div class="image-grid">
-                <div v-for="img in collection.images" :key="img.id" class="card">
-                    <!-- 🟢 Immagini direttamente da /public -->
-                    <img :src="getPublicImageUrl(img.src)" :alt="img.title" class="card-img" />
-                    <h5>{{ img.title }}</h5>
-                    <div class="tags">
-                        <span v-for="tag in img.tags" :key="tag" @click="filterByTag(tag)" class="tag">
-                            {{ tag }}
-                        </span>
+            <div class="row">
+                <div v-for="img in collection.images" :key="img.id" class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img :src="getPublicImageUrl(img.src)" :alt="img.title" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">{{ img.title }}</h5>
+                            <div class="tags">
+                                <span v-for="tag in img.tags" :key="tag" @click="filterByTag(tag)" class="tag">
+                                    {{ tag }}
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </template>
 
 <style scoped>
-.gallery-container {
-    padding: 1rem;
-}
-
-.search-input {
-    padding: 0.5rem;
-    width: 60%;
-}
-
 .card {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -90,13 +85,11 @@ export default {
 }
 
 .card-img {
-    width: 100%;
     border-radius: 4px;
 }
 
-.image-grid {
-    display: flex;
-    flex-wrap: wrap;
+.image {
+    width: 100%;
 }
 
 .tags {
