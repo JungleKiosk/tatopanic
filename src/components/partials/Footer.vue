@@ -30,10 +30,10 @@
 
     <div class="row justify-content-center text-center mt-3">
       <div class="col-12">
-        <span>Tnks for img to:</span>
+        <!-- <span>Tnks for img to:</span>
         <br>
         <a href="https://pixabay.com/it/users/stokpic-692575/">link</a>
-        <br>
+        <br> -->
       </div>
     </div>
 
