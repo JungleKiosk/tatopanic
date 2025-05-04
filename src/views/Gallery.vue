@@ -1,10 +1,10 @@
 <script>
-import GalleryMain from "../components/main/GalleryMain.vue";
-
+/* import GalleryMain from "../components/main/GalleryMain.vue";
+ */
 export default {
     name: "Gallery",
     components: {
-        GalleryMain
+        /* GalleryMain */
     }
 
 };
@@ -13,8 +13,8 @@ export default {
 <template>
     <div>
         <main class="container mt-5">
-            <GalleryMain></GalleryMain>
-        </main>
+<!--             <GalleryMain></GalleryMain>
+ -->        </main>
 
     </div>
 </template>

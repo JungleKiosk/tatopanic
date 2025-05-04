@@ -4,16 +4,20 @@ import Header from "./components/main/Header.vue";
 import WaveMirrow from "./components/WaveMirrow.vue";
 import Footer from "./components/partials/Footer.vue";
 import Slider from "./components/Slider.vue";
+import { marker_points } from "./data/markers.js";
+import AppMap from "./components/AppMap.vue";
+
 
 export default {
   components: {
     Navbar, Footer,
     WaveMirrow,
-    Slider, Header
+    Slider, Header, AppMap
   },
   data() {
     return {
-      isDarkMode: false // Stato iniziale del tema
+      isDarkMode: false,
+      marker_points: marker_points
     };
   },
 };
@@ -21,10 +25,11 @@ export default {
 
 <template>
   <div id="app">
-    <Navbar/>
+    <Navbar />
     <Header></Header>
     <WaveMirrow />
     <router-view />
+    <AppMap :marker_points="marker_points"></AppMap>
     <Slider />
     <Footer />
   </div>

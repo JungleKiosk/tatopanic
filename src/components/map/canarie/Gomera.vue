@@ -11,8 +11,9 @@ export default {
     },
     methods: {
         getImagePath(name) {
-            return new URL(`../../../assets/img/${name}`, import.meta.url).href;
+            return `/${name}`;
         }
+
     }
 };
 </script>
