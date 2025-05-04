@@ -7,6 +7,7 @@
         {
           "id": 1,
           "src": "img/gallery/uk/uk1.jpg",
+          "desc":"text description",
           "tags": [
             "travel",
             "skills"
@@ -15,6 +16,7 @@
         {
           "id": 2,
           "src": "img/gallery/uk/uk5.jpg",
+          "desc":"text description",
           "tags": [
             "travel",
             "skills"
@@ -23,6 +25,7 @@
         {
           "id": 3,
           "src": "img/gallery/uk/uk2.jpg",
+          "desc":"text description",
           "tags": [
             "nature"
           ]
@@ -30,6 +33,7 @@
         {
           "id": 4,
           "src": "img/gallery/uk/uk4.jpg",
+          "desc":"text description",
           "tags": [
             "landscape"
           ]
@@ -37,6 +41,7 @@
         {
           "id": 5,
           "src": "img/gallery/uk/uk3.jpg",
+          "desc":"text description",
           "tags": [
             "travel"
           ]
@@ -50,6 +55,7 @@
         {
           "id": 1,
           "src": "img/gallery/canarie/gomera/gomera1.jpg",
+          "desc":"text description",
           "tags": [
             "travel",
             "ocean",
@@ -59,6 +65,7 @@
         {
           "id": 2,
           "src": "img/gallery/canarie/gomera/gomera2.jpg",
+          "desc":"text description",
           "tags": [
             "hike",
             "nature"
@@ -67,6 +74,7 @@
         {
           "id": 3,
           "src": "img/gallery/canarie/gomera/gomera3.jpg",
+          "desc":"text description",
           "tags": [
             "nature",
             "view"
@@ -75,6 +83,7 @@
         {
           "id": 4,
           "src": "img/gallery/canarie/gomera/gomera4.JPG",
+          "desc":"text description",
           "tags": [
             "landscape",
             "sunset"
@@ -83,6 +92,7 @@
         {
           "id": 5,
           "src": "img/gallery/canarie/gomera/gomera5.jpg",
+          "desc":"text description",
           "tags": [
             "travel",
             "hike"
@@ -102,6 +112,7 @@
         {
           "id": 1,
           "src": "img/gallery/holland/holand1.jpg",
+          "desc":"text description",
           "tags": [
             "netherlands",
             "city"
@@ -110,6 +121,7 @@
         {
           "id": 2,
           "src": "img/gallery/holland/holand2.jpg",
+          "desc":"text description",
           "tags": [
             "travel",
             "bikes"
@@ -118,6 +130,7 @@
         {
           "id": 3,
           "src": "img/gallery/holland/holand3.jpg",
+          "desc":"text description",
           "tags": [
             "canals",
             "architecture"
@@ -132,6 +145,7 @@
         {
           "id": 1,
           "src": "img/gallery/portugal/portugal1.jpg",
+          "desc":"text description",
           "tags": [
             "travel",
             "city"
@@ -140,6 +154,7 @@
         {
           "id": 2,
           "src": "img/gallery/portugal/portugal2.jpg",
+          "desc":"text description",
           "tags": [
             "ocean",
             "sunset"
@@ -148,6 +163,7 @@
         {
           "id": 3,
           "src": "img/gallery/portugal/portugal3.jpg",
+          "desc":"text description",
           "tags": [
             "nature"
           ]
@@ -155,6 +171,7 @@
         {
           "id": 4,
           "src": "img/gallery/portugal/portugal4.jpg",
+          "desc":"text description",
           "tags": [
             "mountain",
             "hike"

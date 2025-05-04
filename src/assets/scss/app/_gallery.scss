@@ -5,8 +5,8 @@
   z-index: 999;
   background-color: rgba(14, 35, 57, 0.7);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid #ddd;
-  padding: 1rem;
+/*   border-bottom: 1px solid #ddd;
+ */  padding: 1rem;
 }
 
 /* tag slider scroll */
@@ -37,7 +37,23 @@
 
 
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
+/*   border: 1px solid #ccc;
+ */  border-radius: 8px;
   overflow: hidden;
+}
+
+.location-slider {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+.location-slider::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+.location-slider button {
+  white-space: nowrap;
 }
