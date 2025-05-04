@@ -40,21 +40,21 @@ export default {
                 </p>
             </div>
             <div class="col-12 col-lg-6">
-                <img src="../../assets/img/home/3_hand.png" alt="">
+                
             </div>
             <div class="col-12 col-lg-6">
                 <p class="display-5 text-center text-lg-start">
                 </p>
             </div>
             <div class="col-12 col-lg-6">
-                <img src="../../assets/img/home/3_hand.png" alt="">
+                
             </div>
             <div class="col-12 col-lg-6">
                 <p class="display-5 text-center text-lg-start">
                 </p>
             </div>
             <div class="col-12 col-lg-6">
-                <img src="../../assets/img/home/3_hand.png" alt="">
+                
             </div>
         </div>
 
