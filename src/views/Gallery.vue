@@ -51,8 +51,14 @@ export default {
 
 <template>
     <div class="container">
-        <input v-model="searchQuery" @input="onSearchInput" placeholder="Search images..." class="search-input" />
-        <button @click="resetFilters">Reset</button>
+        <div class="filters-bar">
+            <input v-model="searchQuery" @input="onSearchInput" placeholder="Search images..."
+                class="form-control me-2" />
+            <button class="btn btn-warning mt-2 mt-md-0 ms-md-2" @click="resetFilters">
+                Reset
+            </button>
+        </div>
+
 
         <div v-for="collection in filteredCollections" :key="collection.name" class="mb-5">
             <h2>{{ collection.name }} ({{ collection.location }})</h2>
@@ -76,33 +82,4 @@ export default {
     </div>
 </template>
 
-<style scoped>
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-
-.card-img {
-    border-radius: 4px;
-}
-
-.image {
-    width: 100%;
-}
-
-.tags {
-    margin-top: 0.5rem;
-}
-
-.tag {
-    display: inline-block;
-    background: #e0f7fa;
-    color: #006064;
-    padding: 0.2rem 0.5rem;
-    margin-right: 0.3rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
-</style>
+<style scoped></style>
