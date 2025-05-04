@@ -1,13 +1,34 @@
-[
-  {
-    "id": 1,
-    "title": "Nature",
-    "desc": "Foreste e montagne",
-    "cover": "gallery/nature/cover.jpg",
-    "images": [
-      "gallery/canarie/gomera/1.jpg",
-      "gallery/canarie/gomera/2.jpg",
-      "gallery/canarie/gomera/3.jpg"
-    ]
-  }
-]
+{
+  "collections": [
+    {
+      "location": "canarie",
+      "name": "Gomera",
+      "images": [
+        {
+          "id": 1,
+          "src": "img/gallery/canarie/gomera/1.jpg",
+          "title": "Vista dal Mirador",
+          "tags": ["travel", "ocean", "mountain"]
+        },
+        {
+          "id": 2,
+          "src": "img/gallery/canarie/gomera/2.jpg",
+          "title": "Sentiero al tramonto",
+          "tags": ["hike", "nature"]
+        }
+      ]
+    },
+    {
+      "location": "uk",
+      "name": "Lake District",
+      "images": [
+        {
+          "id": 3,
+          "src": "img/gallery/uk/3.jpg",
+          "title": "Paesaggio innevato",
+          "tags": ["snow", "travel"]
+        }
+      ]
+    }
+  ]
+}

@@ -7,10 +7,10 @@ export const marker_points = [
       img_popup: "nurnberg/nurn_castle.jpg",
       img_marker_card:
           [
-              { img_card: "nurnberg/nurn_castle.jpg" },
-              { img_card: "nurnberg/nurn_castle2.jpg" },
-              { img_card: "nurnberg/nurn_castle3.PNG" },
-              { img_card: "nurnberg/nurn_river.PNG" }
+              { img_card: "" },
+              { img_card: "gallery/canarie/gomera/1.jpg" },
+              { img_card: "gallery/canarie/gomera/1.jpg" },
+              { img_card: "gallery/canarie/gomera/1.jpg"}
           ]
   },
   {
